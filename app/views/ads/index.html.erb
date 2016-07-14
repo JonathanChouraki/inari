@@ -1,0 +1,9 @@
+<h1>Ads listing </h1>
+
+<% @ads.each do |ad| %>
+    <p>
+        <%= ad.title %>
+        <%= ad.price %>
+        <%= link_to 'Show', ad_path(ad) %>
+    </p>
+<% end %>
